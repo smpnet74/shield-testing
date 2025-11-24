@@ -1,0 +1,31 @@
+[workspace]
+authors = ["Scott Peterson <sm_peterson@yahoo.com>"]
+channels = ["conda-forge"]
+name = "shield-testing"
+platforms = ["linux-aarch64"]
+version = "0.1.0"
+
+[tasks]
+# Test the model endpoints
+test-endpoints = "python test_endpoints.py"
+
+# Run the full shield comparison tests
+test-shields = "python shield_comparison_test.py"
+
+# Run with verbose output
+test-shields-verbose = "python shield_comparison_test.py --verbose"
+
+# Generate a test report
+report = "python shield_comparison_test.py --report"
+
+[dependencies]
+python = "3.13.*"
+
+[pypi-dependencies]
+requests = ">=2.31.0"
+pytest = ">=7.4.0"
+pandas = ">=2.1.0"
+scikit-learn = ">=1.3.0"
+tabulate = ">=0.9.0"
+rich = ">=13.7.0"
+pydantic = ">=2.5.0"

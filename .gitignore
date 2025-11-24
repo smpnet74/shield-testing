@@ -1,0 +1,38 @@
+# Pixi environment and cache
+.pixi/
+pixi.lock
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# Generated files
+endpoint_config.json
+results.json
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Optional: Uncomment if you want to ignore pixi.lock
+# Some projects commit it for reproducibility, others regenerate it
+# pixi.lock
